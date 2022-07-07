@@ -12,3 +12,110 @@ $bodyFont: 'Open Sans', sans-serif;
 $weight1: 400;
 $weight2: 700;
 
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main
+{
+    background-color: $mainBackgroundColor;
+    width: 100vw;
+    .intro
+    {
+        position: relative;
+        width: 100%;
+        .intro-container
+        {
+            background-color: $introAndEmailBackgroundColor;
+            position: relative;
+            width: 100%;
+            .intro-navbar
+            {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 5px 0px 15px;
+                width: 100%;
+                .links
+                {
+                    display: flex;
+                    list-style: none;
+                    .navbar-link
+                    {
+                        color: $whiteColor;
+                        font-family: $bodyFont;
+                        font-size: $fontSize;
+                        font-weight: $weight1;
+                        padding-right: 10px;
+                        &:hover
+                        {
+                            font-weight: $weight2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .navbar-logo
+                {
+                    height: 50px;
+                    width: 150px;
+                }
+            }
+            .intro-hero-image
+            {
+                display: block;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                top: 50px;
+                width: 80%;
+                z-index: 1;
+            }
+            .intro-mobile-background-pattern
+            {
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+        }
+        #intro-text-1
+        {
+            color: $whiteColor;
+            font-family: $headingFont;
+            font-size: 1.5em;
+            font-weight: $weight2;
+            padding: 0px 15px 0px;
+            position: relative;
+            margin-top: -50px;
+            text-align: center;
+        }
+        #intro-text-2
+        {
+            color: $whiteColor;
+            font-family: $bodyFont;
+            font-size: $fontSize;
+            font-weight: $weight1;
+            margin-top: 20px;
+            padding: 0px 42px 0px;
+            text-align: center;
+        }
+        #get-started-button
+        {
+            background-image: linear-gradient(to right, $callToActionGradientColor1 , $callToActionGradientColor2);
+            border: none;
+            border-radius: 20px;
+            color: $whiteColor;
+            cursor: pointer;
+            display: block;
+            font-family: $headingFont;
+            font-size: $fontSize;
+            font-weight: $weight2;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-right: auto;
+            padding: 10px 80px;
+        }
+    }
+}

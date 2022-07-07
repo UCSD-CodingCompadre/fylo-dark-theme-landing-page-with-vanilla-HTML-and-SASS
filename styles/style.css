@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: #181f2a;
+  width: 100vw;
+}
+
+.main .intro {
+  position: relative;
+  width: 100%;
+}
+
+.main .intro .intro-container {
+  background-color: #1c2431;
+  position: relative;
+  width: 100%;
+}
+
+.main .intro .intro-container .intro-navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 5px 0px 15px;
+  width: 100%;
+}
+
+.main .intro .intro-container .intro-navbar .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.main .intro .intro-container .intro-navbar .links .navbar-link {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.main .intro .intro-container .intro-navbar .links .navbar-link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.main .intro .intro-container .intro-navbar .navbar-logo {
+  height: 50px;
+  width: 150px;
+}
+
+.main .intro .intro-container .intro-hero-image {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+  width: 80%;
+  z-index: 1;
+}
+
+.main .intro .intro-container .intro-mobile-background-pattern {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.main .intro #intro-text-1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0px 15px 0px;
+  position: relative;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.main .intro #intro-text-2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 0px 42px 0px;
+  text-align: center;
+}
+
+.main .intro #get-started-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: auto;
+  padding: 10px 80px;
+}
+/*# sourceMappingURL=style.css.map */
