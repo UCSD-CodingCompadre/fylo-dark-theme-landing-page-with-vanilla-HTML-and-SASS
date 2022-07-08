@@ -177,10 +177,13 @@
           questions, our support team would be happy to help you.
         </p>
         <div class="footer-flex-container-2">
-          <div class="email-input-container">
-            <input class="email-input" id="email-input"  type="text" placeholder="email@example.com">
+          <div class="footer-flex-container-5">
+            <div class="email-input-container">
+              <input class="email-input" id="email-input"  type="text" placeholder="email@example.com">
+            </div>
+            <p id="error-message">Please enter a valid email address</p>
           </div>
-          <button class="get-started-button">
+          <button class="get-started-button" onclick="checkEmail()">
             Get Started For Free
           </button>
         </div>

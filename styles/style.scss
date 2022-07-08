@@ -477,6 +477,21 @@ body
     }
 }
 
+#error-message
+{
+    color: $errorColor;
+    display: none;
+    font-family: $bodyFont;
+    font-size: 12px;
+    font-weight: $weight1;
+    margin-left: 20px;
+}
+
+.footer-flex-container-5
+{
+    text-align: left;
+}
+
 @media screen and (min-width: 1024px)
 {
     .main 
@@ -676,6 +691,7 @@ body
                 .get-started-button
                 {
                     margin: 0px;
+                    height: 40px;
                 }
             }
             .footer-container

@@ -500,6 +500,19 @@ body {
   color: white;
 }
 
+#error-message {
+  color: #ff4242;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.footer-flex-container-5 {
+  text-align: left;
+}
+
 @media screen and (min-width: 1024px) {
   .main .intro .intro-container .intro-navbar {
     display: -webkit-box;
@@ -682,6 +695,7 @@ body {
   }
   .main .footer .footer-card .get-started-button {
     margin: 0px;
+    height: 40px;
   }
   .main .footer .footer-container {
     display: -webkit-box;
