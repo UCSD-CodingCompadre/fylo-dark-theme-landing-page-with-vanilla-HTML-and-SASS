@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main {
   background-color: #181f2a;
   width: 100vw;
@@ -15,6 +19,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -47,6 +52,7 @@
 
 .main .intro .intro-container .intro-navbar .links .navbar-link {
   color: white;
+  cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -215,6 +221,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 2px solid white;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,6 +407,10 @@
   background-image: none;
 }
 
+.main .footer .footer-flex-container-4 img {
+  display: none;
+}
+
 .main .footer .footer-container {
   display: block;
   margin-left: auto;
@@ -427,6 +438,7 @@
 }
 
 .main .footer .footer-container .footer-flex-container .footer-text {
+  cursor: pointer;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -435,6 +447,7 @@
 }
 
 .main .footer .footer-container #footer-list {
+  cursor: pointer;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -444,7 +457,13 @@
 }
 
 .main .footer .footer-container #footer-list #footer-item {
+  cursor: pointer;
   margin-top: 10px;
+}
+
+.main .footer .footer-container #footer-list #footer-item:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .main .footer .footer-container .footer-icons-row {
@@ -460,6 +479,7 @@
 }
 
 .main .footer .footer-container .footer-icons-row .icon-container {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,6 +502,11 @@
 
 @media screen and (min-width: 1024px) {
   .main .intro .intro-container .intro-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 50px;
     padding-right: 20px;
     padding-top: 50px;
@@ -489,10 +514,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-  .main .intro .intro-container .intro-navbar .navbar-logo {
-    height: 50px;
-    width: 150px;
+    width: 1000px;
   }
   .main .intro .intro-container .intro-navbar .links .navbar-link {
     font-size: 1.25rem;
@@ -508,6 +530,8 @@
   .main .intro .intro-container .intro-desktop-background-pattern {
     display: block;
     height: 500px;
+    position: relative;
+    top: -150px;
     width: 100%;
   }
   .main .intro #intro-text-1 {
@@ -543,6 +567,168 @@
   }
   .main .cards .desktop-grid .card {
     margin: 0px;
+  }
+  .main .hero-card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1000px;
+  }
+  .main .hero-card .hero-image-2 {
+    margin: 0px;
+    width: 500px;
+  }
+  .main .hero-card .hero-flex-container {
+    width: 500px;
+  }
+  .main .hero-card .hero-card-heading {
+    font-size: 1.75rem;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 250px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main .hero-card #hero-card-text {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main .hero-card .works-container {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .main .quotes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100vw;
+  }
+  .main .quotes #card-1 {
+    margin-top: auto;
+  }
+  .main .quotes .quote-image {
+    position: relative;
+    top: -20px;
+    left: 40px;
+    height: 40px;
+    width: 50px;
+  }
+  .main .quotes .quote-card {
+    padding: 0px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    width: 300px;
+  }
+  .main .quotes .quote-card .quote-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .main .quotes .quote-card .profile-container .quotes-flex-container .profile-name {
+    font-size: 12px;
+  }
+  .main .quotes .quote-card .profile-container .quotes-flex-container .profile-title {
+    font-size: 8px;
+  }
+  .main .footer {
+    padding-bottom: 100px;
+  }
+  .main .footer .footer-card {
+    top: -116px;
+    margin-bottom: 0px;
+    width: 700px;
+  }
+  .main .footer .footer-card .footer-flex-container-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 25px;
+  }
+  .main .footer .footer-card .email-input-container {
+    margin: 0px;
+    padding: 10px 130px 10px 20px;
+  }
+  .main .footer .footer-card .get-started-button {
+    margin: 0px;
+  }
+  .main .footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1000px;
+  }
+  .main .footer .footer-container .footer-logo {
+    display: none;
+    margin-left: 0px;
+    height: 50px;
+    width: 200px;
+  }
+  .main .footer .footer-container .footer-flex-container {
+    margin: 0px;
+  }
+  .main .footer .footer-container #footer-list {
+    margin: 0px;
+  }
+  .main .footer .footer-container .footer-icons-row {
+    margin: 0px;
+  }
+  .main .footer .footer-container .footer-icons-row .icon-container {
+    height: 30px;
+    width: 30px;
+  }
+  .main .footer .footer-container .footer-flex-container-3 {
+    width: 220px;
+  }
+  .main .footer .footer-flex-container-4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  .main .footer .footer-flex-container-4 img {
+    display: block;
+  }
+  #text-1 {
+    margin-top: 10px;
+  }
+  #image-1 {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

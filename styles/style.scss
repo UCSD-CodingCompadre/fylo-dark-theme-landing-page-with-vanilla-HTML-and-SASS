@@ -17,6 +17,12 @@ $weight2: 700;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
+}
+
+body
+{
+    overflow-x: hidden;
 }
 
 .main
@@ -29,6 +35,7 @@ $weight2: 700;
         position: relative;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
         width: 100%;
         .intro-container
         {
@@ -49,6 +56,7 @@ $weight2: 700;
                     .navbar-link
                     {
                         color: $whiteColor;
+                        cursor: pointer;
                         font-family: $bodyFont;
                         font-size: $fontSize;
                         font-weight: $weight1;
@@ -212,6 +220,7 @@ $weight2: 700;
         {
             align-items: center;
             border-bottom: 2px solid $whiteColor;
+            cursor: pointer;
             display: flex;
             margin-top: 20px;
             padding-bottom: 2.5px;
@@ -383,6 +392,13 @@ $weight2: 700;
                 }
             }
         }
+        .footer-flex-container-4
+            {
+                img
+                {
+                    display: none;
+                }
+        }
         .footer-container
         {
             display: block;
@@ -405,6 +421,7 @@ $weight2: 700;
                 }
                 .footer-text
                 {
+                    cursor: pointer;
                     color: $whiteColor;
                     font-family: $bodyFont;
                     font-size: $fontSize;
@@ -414,6 +431,7 @@ $weight2: 700;
             }
             #footer-list
             {
+                cursor: pointer;
                 color: $whiteColor;
                 font-family: $bodyFont;
                 font-size: $fontSize;
@@ -422,7 +440,13 @@ $weight2: 700;
                 list-style: none;
                 #footer-item
                 {
+                    cursor: pointer;
                     margin-top: 10px;
+                    &:hover
+                    {
+                        font-weight: $weight2;
+                        text-decoration: underline;
+                    }
                 }
             }
             .footer-icons-row
@@ -434,6 +458,7 @@ $weight2: 700;
                 width: fit-content;
                 .icon-container
                 {
+                    cursor: pointer;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -462,16 +487,15 @@ $weight2: 700;
             {
                 .intro-navbar
                 {
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: auto;
                     padding-left: 50px;
                     padding-right: 20px;
                     padding-top: 50px;
                     padding-bottom: 20px;
                     height: fit-content;
-                    .navbar-logo
-                    {
-                        height: 50px;
-                        width: 150px;
-                    }
+                    width: 1000px;
                     .links
                     {
                         .navbar-link
@@ -494,6 +518,8 @@ $weight2: 700;
                 {
                     display: block;
                     height: 500px;
+                    position: relative;
+                    top: -150px;
                     width: 100%;
                 }
             }
@@ -536,5 +562,178 @@ $weight2: 700;
                 }
             }
         }
+        .hero-card
+        {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            .hero-image-2
+            {
+                margin: 0px;
+                width: 500px;
+            }
+            .hero-flex-container
+            {
+                width: 500px;
+            }
+            .hero-card-heading
+            {
+                font-size: 1.75rem;
+                margin: 0px;
+                padding: 0px;
+                padding-right: 250px;
+                width: fit-content;
+            }
+            #hero-card-text
+            {
+                margin: 0px;
+                margin-top: 20px;
+                padding: 0px;
+                width: fit-content;
+            }
+            .works-container
+            {
+                margin: 0px;
+                margin-top: 20px;
+            }
+        }
+        .quotes
+        {
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            justify-content: center;
+            padding: 0px;
+            padding-bottom: 300px;
+            position: relative;
+            width: 100vw;
+            #card-1
+            {
+                margin-top: auto;
+            }
+            .quote-image
+            {
+                position: relative;
+                top: -20px;
+                left: 40px;
+                height: 40px;
+                width: 50px;
+            }
+            .quote-card
+            {
+                padding: 0px;
+                padding-top: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                position: relative;
+                margin: 0px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 20px;
+                width: 300px;
+                .quote-text
+                {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .profile-container
+                {
+                    .quotes-flex-container
+                    {
+                        .profile-name
+                        {
+                            font-size: 12px;
+                        }
+                        .profile-title
+                        {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer
+        {
+            padding-bottom: 100px;
+            .footer-card
+            {
+                top: -116px;
+                margin-bottom: 0px;
+                width: 700px;
+                .footer-flex-container-2
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 25px;
+                }
+                .email-input-container
+                {
+                    margin: 0px;
+                    padding: 10px 130px 10px 20px;
+                }
+                .get-started-button
+                {
+                    margin: 0px;
+                }
+            }
+            .footer-container
+            {
+                display: flex;
+                margin-top: 25px;
+                justify-content: space-between;
+                width: 1000px;
+                .footer-logo
+                {
+                    display: none;
+                    margin-left: 0px;
+                    height: 50px;
+                    width: 200px;
+                }
+                .footer-flex-container
+                {
+                    margin: 0px;
+                }
+                #footer-list
+                {
+                    margin: 0px;
+                }
+                .footer-icons-row
+                {
+                    margin: 0px;
+                    .icon-container
+                    {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+                .footer-flex-container-3
+                {
+                    width: 220px;
+                }
+            }
+            .footer-flex-container-4
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 1000px;
+                img
+                {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #text-1
+    {
+        margin-top: 10px;
+    }
+
+    #image-1
+    {
+        margin-top: 10px;
     }
 }
