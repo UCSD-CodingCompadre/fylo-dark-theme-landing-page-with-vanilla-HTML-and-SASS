@@ -535,7 +535,8 @@ body {
   }
   .main .intro .intro-container .intro-hero-image {
     top: 0px;
-    width: 700px;
+    height: 400px;
+    width: 600px;
   }
   .main .intro .intro-container .intro-mobile-background-pattern {
     display: none;
